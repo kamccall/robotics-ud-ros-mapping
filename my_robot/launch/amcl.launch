@@ -11,18 +11,17 @@
     <param name="global_frame_id" value="map" />
     <param name="initial_pose_x"  value="0.0" />
     <param name="initial_pose_y"  value="0.0" />
-    <param name="initial_pose_a"  value="3.1416" />
+    <param name="initial_pose_a"  value="0.0" />
 
     <!-- <remap from="scan" to="my_robot/laser/scan" /> -->
     <remap from="scan" to="/scan" />
 
     <!-- CONFIGURATION PARAMETERS -->
     <param name="min_particles" value="100" />
-    <param name="max_particles" value="1500" />
+    <param name="max_particles" value="2000" />
     <param name="update_min_d"  value="0.1" />
-    <param name="update_min_a"  value="0.4" />
-
-
+    <param name="update_min_a"  value="0.5" />
+    <param name="laser_max_beams" value="40" />
   </node>
 
   <!-- move base package entries -->
