@@ -5,7 +5,8 @@ this project focused on creating a map (of the gazebo world used in prior projec
 this initial image is the robot within both the gazebo world as well as the rviz visualization tool. 
 ![image](https://user-images.githubusercontent.com/19736497/200440496-58044ee3-c327-4812-ab72-0f2833b3804f.png)![image](https://user-images.githubusercontent.com/19736497/200444151-8dff8f24-2857-4bef-b140-18f5840728c0.png)
 
-this next image... 
+this is a more detailed image of the initial particle cloud created by the amcl package within rviz before navigation.
+![image](https://user-images.githubusercontent.com/19736497/200440641-b975da29-5d02-4a62-b938-b01bafb06a2e.png)![image](https://user-images.githubusercontent.com/19736497/200444410-5b1cc6e3-6d4f-4b20-bc01-7c281f25ac2f.png)
 
 
 
