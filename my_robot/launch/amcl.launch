@@ -17,10 +17,11 @@
     <remap from="scan" to="/scan" />
 
     <!-- CONFIGURATION PARAMETERS -->
-    <param name="min_particles" value="100" />
-    <param name="max_particles" value="2000" />
+    <!-- THEORY: does fewer particles updated faster provide better accuracy? (do we really need thousands?!?) -->
+    <param name="min_particles" value="80" />
+    <param name="max_particles" value="1600" />
     <param name="update_min_d"  value="0.1" />
-    <param name="update_min_a"  value="0.5" />
+    <param name="update_min_a"  value="0.4" />
     <param name="laser_max_beams" value="40" />
   </node>
 
