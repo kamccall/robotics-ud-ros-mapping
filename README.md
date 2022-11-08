@@ -9,9 +9,13 @@ this initial image is the robot within both the `gazebo` world as well as the `r
 this is a more detailed image of the initial particle cloud created by the `amcl` package within `rviz` before navigation.
 ![image](https://user-images.githubusercontent.com/19736497/200440641-b975da29-5d02-4a62-b938-b01bafb06a2e.png)![image](https://user-images.githubusercontent.com/19736497/200444410-5b1cc6e3-6d4f-4b20-bc01-7c281f25ac2f.png)
 
+
 these are more detailed images of the robot while underway, navigating using the 2d-navigation in `rviz`. 
  ![image](https://user-images.githubusercontent.com/19736497/200443174-227708b0-f0c9-4256-87fd-9ba8f58a8002.png)
 ![image](https://user-images.githubusercontent.com/19736497/200443367-f97f6525-8a67-4d49-a455-6d98410c0653.png)![image](https://user-images.githubusercontent.com/19736497/200444505-2a941b73-a11f-4c3e-97e8-ae91f4e11404.png)
 
+
+i played around with the `amcl` parameters a bit to try to tighten up the particle cloud. this looks a bit better, but it's very hard to create an extremely dense particle cloud. 
+![image](https://user-images.githubusercontent.com/19736497/200446732-b9840670-39be-4f5c-bd76-deba700ab429.png)![image](https://user-images.githubusercontent.com/19736497/200446879-fce822eb-b34f-4554-bc8d-0279a9e561f2.png)
 
 
