@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <robot>
-
   <!-- wheel joints actuator plug-in -->
   <gazebo>
     <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
@@ -107,5 +106,4 @@
       </plugin>
     </sensor>
   </gazebo>
-
 </robot>
