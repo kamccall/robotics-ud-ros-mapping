@@ -13,3 +13,5 @@ after mapping the entire environment, the `RTAB` package places a (very large) r
 as you may be able to see in the diagram (it is quite small), after several laps around the condo there was only 1 loop closure, so i re-ran the mapping utility and did more laps to secure more loop closures (now 6).  however, this made the rtab database over 200 MB (152 MB even in zipped form).  
 ![image](https://user-images.githubusercontent.com/19736497/201531924-22e62ee1-ebf7-4a61-9f17-34a97ebf4616.png)![image](https://user-images.githubusercontent.com/19736497/201534898-61403611-f360-452c-a8ad-9ef89e346390.png)
 ![image](https://user-images.githubusercontent.com/19736497/201532019-57a3006b-9681-4610-b2f6-e35207e2cfd4.png)![image](https://user-images.githubusercontent.com/19736497/201534911-ffcc3178-03f6-49be-a084-ff86d52f8ac0.png)
+
+i was able to download the rtab database file and put it into onedrive, which can be accessed here:  https://1drv.ms/u/s!AvaOO0ayi_lviPVhYCfoDumBjtaA8Q?e=JFwXMI
