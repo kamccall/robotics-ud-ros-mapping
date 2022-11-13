@@ -1,21 +1,9 @@
 # robotics-ud-ros-localization
-udacity robotics project3 using `amcl` package to perform localization within `gazebo` world.
-this project focused on creating a map (of the `gazebo` world used in prior projects) using `map_server` to create the `map.pgm` representation, and then the use of the `amcl` ROS package in order to create a particle cloud to localize the robot within that mapped environment while it navigates using `rviz`. 
+udacity robotics project4 using rtab-map on simulated gazebo robot to create 2d and 3d environment maps.
+this project focused on doing SLAM using the ROS `RTAB` package which uses graphSLAM to create a map of the `gazebo` world used in prior projects.  
 
-this initial image is the robot within both the `gazebo` world as well as the `rviz` visualization tool. 
-![image](https://user-images.githubusercontent.com/19736497/200440496-58044ee3-c327-4812-ab72-0f2833b3804f.png)![image](https://user-images.githubusercontent.com/19736497/200444151-8dff8f24-2857-4bef-b140-18f5840728c0.png)
+this is an image of the mapping process underway using `RTAB`, while using the python teleop package to drive the robot around the `gazebo` world. 
+![image](https://user-images.githubusercontent.com/19736497/201499040-ab312347-6ceb-48b2-af47-b6a0363ec078.png)![image](https://user-images.githubusercontent.com/19736497/201499651-db6e7dea-17e2-44f0-975d-c50f6b3456a3.png)
 
-
-this is a more detailed image of the initial particle cloud created by the `amcl` package within `rviz` before navigation.
-![image](https://user-images.githubusercontent.com/19736497/200440641-b975da29-5d02-4a62-b938-b01bafb06a2e.png)![image](https://user-images.githubusercontent.com/19736497/200444410-5b1cc6e3-6d4f-4b20-bc01-7c281f25ac2f.png)
-
-
-these are more detailed images of the robot while underway, navigating using the 2d-navigation in `rviz`. 
- ![image](https://user-images.githubusercontent.com/19736497/200443174-227708b0-f0c9-4256-87fd-9ba8f58a8002.png)
-![image](https://user-images.githubusercontent.com/19736497/200443367-f97f6525-8a67-4d49-a455-6d98410c0653.png)![image](https://user-images.githubusercontent.com/19736497/200444505-2a941b73-a11f-4c3e-97e8-ae91f4e11404.png)
-
-
-i played around with the `amcl` parameters a bit to try to tighten up the particle cloud. this looks a bit better, but it's very hard to create an extremely dense particle cloud. 
-![image](https://user-images.githubusercontent.com/19736497/200446732-b9840670-39be-4f5c-bd76-deba700ab429.png)![image](https://user-images.githubusercontent.com/19736497/200446879-fce822eb-b34f-4554-bc8d-0279a9e561f2.png)
-
-
+after mapping the entire environment, the `RTAB` package places a (very large) rtab database file in the `/root/.ros` directory.  this is an image of the resulting map (far left) generated while viewing it within the `rtabdatabaseViewer` utility. 
+![image](https://user-images.githubusercontent.com/19736497/201499350-23f0037c-ade2-43a0-bf55-853506e5c07b.png)![image](https://user-images.githubusercontent.com/19736497/201499704-2f061738-75b4-4f9f-a3a8-e0c4107be3ac.png)
