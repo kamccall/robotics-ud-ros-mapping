@@ -30,6 +30,7 @@ after doing that, it was easier to complete loop closure.  here is an image of t
 
 
 after mapping within that environment, you can observe that the space that has been mapped and outlined is much more accurate:
+
 ![image](https://user-images.githubusercontent.com/19736497/202970552-b3aab498-3598-4a47-b772-861601f53f21.png)![image](https://user-images.githubusercontent.com/19736497/203122059-ba305c92-6bf5-40c5-a03f-bc711983e8c0.png)
 
 the updated `rtabdb` can be accessed here: https://1drv.ms/u/s!AvaOO0ayi_lviPVkUONXVMzQdVr3sw?e=dgG4p2 
