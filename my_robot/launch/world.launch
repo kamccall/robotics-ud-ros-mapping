@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
   <!-- robot pose -->
-  <arg name="x" default="3.8" />
+  <arg name="x" default="2.7" />
   <arg name="y" default="-9.0" />
   <arg name="z" default="0" />
   <arg name="roll" default="0" />
@@ -12,7 +12,7 @@
   <include file="$(find my_robot)/launch/robot_description.launch" />
     
   <!-- world file argument pointer -->
-  <arg name="world_file" default="$(find my_robot)/worlds/enso_condo_building_simplified.world"/>
+  <arg name="world_file" default="$(find my_robot)/worlds/enso_condo_building_simplified_bots.world"/>
   
   <!-- launch gazebo world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
