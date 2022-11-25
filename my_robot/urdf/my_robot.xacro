@@ -202,7 +202,7 @@
 
   <!-- optical camera joint definition -->
   <joint name="camera_optical_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="-1.571 -1.571 -1.571" />
+    <origin xyz="0 0 0" rpy="-1.571 0 -1.571" />
     <parent link="camera" />
     <child link="camera_link_optical" />
   </joint>
