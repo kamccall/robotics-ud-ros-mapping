@@ -200,16 +200,16 @@
     <axis xyz="0 1 0" rpy="0 0 0" />
   </joint>
 
-  <!-- optical camera definition -->
-  <link name="camera_link_optical" />
-
   <!-- optical camera joint definition -->
   <joint name="camera_optical_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="-1.571 0 -1.571" />
+    <origin xyz="0 0 0" rpy="-1.571 -1.571 -1.571" />
     <parent link="camera" />
     <child link="camera_link_optical" />
   </joint>
  
+  <!-- optical camera definition -->
+  <link name="camera_link_optical" />
+  
   <!-- lidar sensor definition -->
   <link name="hokuyo">
     <inertial>
