@@ -36,5 +36,5 @@ after mapping within that environment, you can observe that the space that has b
 the updated `rtabdb` can be accessed here: https://1drv.ms/u/s!AvaOO0ayi_lviPVkUONXVMzQdVr3sw?e=dgG4p2 
 
 ## phase 3 efforts
-even though the 2d map looks pretty good, the odom telemetry displayed in the rtabviewer looks right, and the rviz visualization of the mapping process looks good, the resulting 3d map is a complete mess.  i have double checked all the values in the robot .xacro and .gazebo file, and for the life of me i just can't see what is wrong.  i have compared this with a other samples, and everything looks right. 
+even though the 2d map looks pretty good, the odom telemetry displayed in the rtabviewer looks right, the 2d occupancy grid in the databaseViewer looks pretty good, and the rviz visualization of the mapping process looks good, the resulting 3d map is a complete mess.  i have double checked all the values in the robot .xacro and .gazebo file, and for the life of me i just can't see what is wrong.  i have compared this with a other samples, and everything looks right. 
 ???
