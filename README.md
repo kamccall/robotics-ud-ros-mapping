@@ -34,3 +34,7 @@ after mapping within that environment, you can observe that the space that has b
 ![image](https://user-images.githubusercontent.com/19736497/202970552-b3aab498-3598-4a47-b772-861601f53f21.png)![image](https://user-images.githubusercontent.com/19736497/203122059-ba305c92-6bf5-40c5-a03f-bc711983e8c0.png)
 
 the updated `rtabdb` can be accessed here: https://1drv.ms/u/s!AvaOO0ayi_lviPVkUONXVMzQdVr3sw?e=dgG4p2 
+
+## phase 3 efforts
+even though the 2d map looks pretty good, the odom telemetry displayed in the rtabviewer looks right, and the rviz visualization of the mapping process looks good, the resulting 3d map is a complete mess.  i have double checked all the values in the robot .xacro and .gazebo file, and for the life of me i just can't see what is wrong.  i have compared this with a other samples, and everything looks right. 
+???
