@@ -36,5 +36,16 @@ after mapping within that environment, you can observe that the space that has b
 the updated `rtabdb` can be accessed here: https://1drv.ms/u/s!AvaOO0ayi_lviPVkUONXVMzQdVr3sw?e=dgG4p2 
 
 ## phase 3 efforts
-even though the 2d map looks pretty good, the odom telemetry displayed in the rtabviewer looks right, the 2d occupancy grid in the databaseViewer looks pretty good, and the rviz visualization of the mapping process looks good, the resulting 3d map is a complete mess.  i have double checked all the values in the robot .xacro and .gazebo file, and for the life of me i just can't see what is wrong.  i have compared this with a other samples, and everything looks right. 
-???
+even though the 2d map looked pretty good, the odom telemetry displayed in the rtabviewer looked right, the 2d occupancy grid in the databaseViewer looked pretty good, and the rviz visualization of the mapping process looked good, the resulting 3d map was still a complete mess. i then realized that the `wheelSeparation` value in the robot `.gazebo` file was wrong. i had entered a value equal to the width (the y dimension) of the chassis, when in reality it should have been the total distance between (what seems to be) the outside of the wheels, which is a much higher value.  after increasing that value and re-mapping, i not only had far more loop closures (X instead of the Y on the last run), but the 3d map now looks normal.  with a few more - and probably slower - passes i expect that map would look even cleaner, but i now see how that was my error.  
+
+the last `rtabdb` database file can be accessed here: https://1drv.ms/u/s!AvaOO0ayi_lviPVxrNZd9ZrsZWj0ng?e=FXw4iS
+
+here you can see the improved 2d map (with the higher number of loop closures):
+
+![image](https://user-images.githubusercontent.com/19736497/207490605-0eb86c3d-f695-441d-99da-36650d28a497.png)![image](https://user-images.githubusercontent.com/19736497/207493239-2c13e69a-6e74-407e-b70f-a8530f80f393.png)
+
+
+and here you can see the (now reasonable) 3d map, generated from the `rtabdatabase-Viewer` utility:
+
+![image](https://user-images.githubusercontent.com/19736497/207491675-d0edb818-c4d9-4fe9-98b5-24eb22c521e8.png)![image](https://user-images.githubusercontent.com/19736497/207493311-3c20a3ff-0555-4e52-92be-d471e27b9af8.png)
+
