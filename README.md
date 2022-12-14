@@ -1,4 +1,4 @@
-# robotics-ud-ros-localization
+# robotics-ud-ros-mapping
 udacity robotics project4 using rtab-map on simulated gazebo robot to create 2d and 3d environment maps.
 this project focused on doing SLAM using the ROS `RTAB` package which uses graphSLAM to create a map of the `gazebo` world used in prior projects.  
 
